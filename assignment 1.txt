@@ -1,0 +1,114 @@
+ Method Overloading:
+================
+
+class solarsystem
+{
+ void planet()
+  {
+    System.out.println("There is Eight planet in Solar System");
+  }
+ void planet(int count, char a)
+  {
+    System.out.println("Mercury is the first planet");
+  }
+ void planet(char b , float num)
+  {
+    System.out.println("Venus is the second planet");
+   }
+  void planet(char c , char d)
+  {
+    System.out.println("Earth is the Third planet");
+  }
+  void planet(string num , double num)
+  {
+    System.out.println("Mars is the fourth planet");
+   }
+ void planet(int count ,int count1)
+  {
+   System.out.println("Jupiter is the fifth planet");
+  }
+ void planet(float a , float b)
+  {
+    System.out.println("Saturn is the sixth planet");
+  }
+ void planet(char b , float a)
+   {
+    System.out.println("Uranus is the seventh planet");
+    }
+  void planet(int count , string num)
+  {
+    System.out.println("Neptune is the Eight planet");
+   }
+Public static void main(String arg[])
+  {
+      solarsystem ob=new solarsystem();
+	ob.planet();
+	ob.planet(1,'a');
+	ob.planet('b',1.0);
+	ob.planet('c','d');
+	ob.planet("Mars",2.0);
+	ob.planet(2,3);
+	ob.planet(3.0,4.2);
+	ob.planet(4,"Neptune");
+    }
+}
+====================================================================
+ Inheritance :
+=========
+
+class Student
+{
+    void printIden()
+    {
+        System.out.print("Student's ");
+    }
+}
+class MCA extends Student
+{
+    void Degree()
+    {
+        System.out.println("Degree is Master of computer applications");
+    }
+}
+class Applicationsdev extends MCA
+{
+    void Stream()
+    {
+        System.out.println("Stream is Computer Applications");
+    }
+}
+class Mobileapp extends Applicationsdev
+{
+    void Domain()
+    {
+        System.out.println("Domain is MobileApp");
+    }
+}
+class Android extends Mobileapp
+{
+    void Tech()
+    {
+        System.out.println("Technology is used in Development ");
+    }
+}
+class Assingment
+{
+    public static void main(String []arg)
+    {
+        MCA mc =new MCA();
+        mc.printIden();
+        mc.Degree();
+
+        Applicationsdev appdev =new Applicationsdev ();
+        appdev.printIden();
+        appdev.Stream();
+
+       Mobileapp mb =new Mobileapp();
+        mb.printIden();
+        mb.Domain();
+        
+        Android and =new Android();
+        and .printIden();
+        and .Tech();
+    }
+}

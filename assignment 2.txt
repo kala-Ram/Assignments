@@ -1,0 +1,49 @@
+class TeamSquad
+{
+int team_members  = 25;
+int subs_members=14;
+int Team_coach=5;
+void dispteamcount()
+{
+System.out.println("The Squad count is :" +team_members);
+}
+}
+
+class Selected_member extends TeamSquad
+{
+void Select_members()
+{
+System.out.println("The Selected members in cricket tour :" +(team_members-subs_members)));
+}
+}
+
+class substitute_member extends TeamSquad
+{
+void substitute_members()
+{
+System.out.println("The Temporary Employee incremented salary is :" +subs_members));
+}
+}
+class Teamcoach extends TeamSquad
+{
+void Squad_Coach()
+{
+System.out.println("Team Coach count :" +Team_coach));
+}
+}
+public class HerInheritance_cricket
+{
+public static void main(String args[])
+{
+Selected_member selMem = new Selected_member();
+substitute_member subMem = new substitute_member();
+Teamcoach TC = new Teamcoach();
+selMem.dispteamcount();
+selMem.Select_members();
+
+t.dispteamcount();
+t.substitute_member();
+
+TC.Squad_Coach();
+}
+}
